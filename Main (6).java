@@ -1,6 +1,6 @@
 import  java.util.Scanner;
-
-void main() {
+public class Main {
+public static void main(String[] args) {
     Scanner one = new Scanner(System.in);
     Scanner two = new Scanner(System.in);
     User[] arr = new People[4];
@@ -18,7 +18,7 @@ void main() {
         String password = one.nextLine();
         arr[i].user(login, password);
     }
-    for(int i = 2; i <= 3; i++) {
+    for(int i = 0; i <= 1; i++) {
         System.out.println("Введите ФИО:");
         String fio = one.nextLine();
         System.out.println("Введите возраст:");
@@ -32,6 +32,7 @@ void main() {
         String password = one.nextLine();
         arr[i].user(login, password);
     }
+  }
 }
 
 interface User {
