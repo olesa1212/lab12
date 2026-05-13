@@ -1,9 +1,9 @@
 import  java.util.Scanner;
 public class Main {
 public static void main(String[] args) {
+    User[] arr = new People[4];
     Scanner one = new Scanner(System.in);
     Scanner two = new Scanner(System.in);
-    User[] arr = new People[4];
     for(int i = 0; i <= 1; i++) {
         System.out.println("Введите ФИО:");
         String fio = one.nextLine();
