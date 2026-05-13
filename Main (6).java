@@ -1,5 +1,4 @@
-import javax.xml.transform.SourceLocator;
-import java.sql.SQLOutput;
+import  java.util.Scanner;
 
 void main() {
     Scanner one = new Scanner(System.in);
