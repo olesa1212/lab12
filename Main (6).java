@@ -2,35 +2,35 @@ import javax.xml.transform.SourceLocator;
 import java.sql.SQLOutput;
 
 void main() {
-    Scanner in = new Scanner(System.in);
-    Scanner on = new Scanner(System.in);
+    Scanner one = new Scanner(System.in);
+    Scanner two = new Scanner(System.in);
     User[] arr = new People[4];
     for(int i = 0; i <= 1; i++) {
         System.out.println("Введите ФИО:");
-        String fio = in.nextLine();
+        String fio = one.nextLine();
         System.out.println("Введите возраст:");
-        int age = on.nextInt();
+        int age = two.nextInt();
         System.out.println("Введите должность:");
-        String post = in.nextLine();
+        String post = one.nextLine();
         arr[i] = new Teacher(fio, age, post);
         System.out.println("Введите логин:");
-        String login = in.nextLine();
+        String login = one.nextLine();
         System.out.println("Введите пароль:");
-        String password = in.nextLine();
+        String password = one.nextLine();
         arr[i].user(login, password);
     }
     for(int i = 2; i <= 3; i++) {
         System.out.println("Введите ФИО:");
-        String fio = in.nextLine();
+        String fio = one.nextLine();
         System.out.println("Введите возраст:");
-        int age = on.nextInt();
+        int age = two.nextInt();
         System.out.println("Введите должность:");
-        String post = in.nextLine();
+        String post = one.nextLine();
         arr[i] = new Student(fio, age, post);
         System.out.println("Введите логин:");
-        String login = in.nextLine();
+        String login = one.nextLine();
         System.out.println("Введите пароль:");
-        String password = in.nextLine();
+        String password = one.nextLine();
         arr[i].user(login, password);
     }
 }
